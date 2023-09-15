@@ -1,11 +1,21 @@
-const repeatString = function() {
+const repeatString = function(x, y) {
 
-    let loopAmount = 1;
     let sayHey = "";
+    let loopAmount = y;
 
-    for(let i = 0; i < loopAmount; i++) {
-        sayHey = sayHey + "hey";
+    if(loopAmount > 0){
+        for(let i = 0; i < loopAmount; i++) {
+            sayHey = sayHey + x;
+        }
     }
+    else if(loopAmount < 0) {
+        return "ERROR"
+    }
+    else {
+      return sayHey  
+    }
+
+    
 
     return sayHey;
 };
