@@ -20,8 +20,12 @@ const sum = function(x) {
   return sum;
 };
 
-const multiply = function(x, y) {
-  let product = x * y;
+const multiply = function(x) {
+  let product = 1;
+
+  for(let i = 0; i < x.length; i++) {
+    product = product * x[i];
+  }
 
   return product;
 };
