@@ -31,7 +31,13 @@ const multiply = function(x) {
 };
 
 const power = function(x, y) {
-	let nPower = x^y;
+	let nPower = x;
+
+  for(let i = 1; i < y; i++) {
+    nPower = nPower * x;
+  }
+
+  return nPower;
 };
 
 const factorial = function(x) {
