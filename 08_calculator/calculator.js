@@ -41,7 +41,24 @@ const power = function(x, y) {
 };
 
 const factorial = function(x) {
-	let sum = x;
+	let factProd = x;
+  console.log(factProd);
+
+  if(x > 0) {
+    for(let i = x; i > 1; i--) {
+      x--;
+      factProd = factProd * (x);
+      console.log(x);
+      console.log(factProd);
+    }
+  
+    return factProd;
+  } 
+  else {
+    factProd = 1;
+    return factProd;
+  }
+  
 };
 
 // Do not edit below this line
